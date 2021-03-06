@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0 //EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.xzer.springboot.mapper.NCoVCNMapper">
+    <select id="selectAll" resultType="cn.xzer.springboot.model.NCoVCN">
+        select eventtime,country,countrycode,province,provincecode,
+               city,citycode,confirmed,suspected,cured,dead
+        from ncov_cn_db
+    </select>
+</mapper>
